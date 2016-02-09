@@ -10,7 +10,19 @@
 </head>
 <body>
 
-<%= yield %>
+<div id ="container">
+  <div id="header">
+    <%= render "shared/header" %>
+  </div>
+  <div id="content">
+    <%= yield %>
+  </div>
+  <div id="sidebar">
+    <%= render "shared/sidebar"%>
+  </div>
+  <div id="footer">
+    <%= render "shared/footer" %>
+  </div>
 
 </body>
 </html>
