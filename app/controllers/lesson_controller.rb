@@ -53,6 +53,19 @@ def step12
   @surface = 141.31
 end
 
+def step15
+  @message = "ごきげんいかが？\nRailsの勉強を頑張りましょう。"
+end
+
+def step18
+  @zaiko = 10
+end
+
+def step19
+  @items ={"フライパン" => 2680, "ワイングラス" => 2550, "ペッパーミル" => 4515, "ピーラー" => 945
+  }
+end
+
   private
   def set_message
     @message = "こんにちは"

@@ -1,0 +1,22 @@
+<% if @zaiko > 0%>
+残り<%= @zaiko %>個です。
+<% else %>
+品切れです
+<%end%>
+<br/>
+
+<% unless @zaiko == 0%>
+残り<%= @zaiko %>個です。
+<% else %>
+品切れです。
+<%end%>
+<br/>
+
+<% case @zaiko
+when 1..5 %>
+残りあとわずか！
+<% when 0%>
+品切れです。
+<% else %>
+在庫に余裕があります。
+<% end %>
